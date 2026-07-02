@@ -1,0 +1,13 @@
+class Solution:
+    def frequencyCount(self, arr):
+        #  code here
+        # Init an array
+        
+        newArr = [0] * len(arr)
+        
+        for i in range(len(arr)):
+            if arr[i] == 0:
+                newArr[0] += 1
+            else:
+                newArr[arr[i]-1] += 1
+        return newArr
